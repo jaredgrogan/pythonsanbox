@@ -1,0 +1,20 @@
+# Document Ingestion and Indexing System
+
+## Overview
+
+This Python project provides a unified system for ingesting documents from various sources, preprocessing the text, and indexing it using Elasticsearch, FAISS, and Pinecone. The system facilitates efficient document retrieval for applications like retrieval-augmented generation (RAG).
+
+## Features
+
+- **Data Ingestion:** Supports reading documents from text files, SQLite databases, and APIs.
+- **Text Preprocessing:** Normalizes and cleans text data.
+- **Indexing:** Uses Elasticsearch, FAISS, and Pinecone for indexing documents.
+- **Search and Retrieval:** Implements search functionalities for efficient document retrieval.
+
+## Installation
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/your-repo/document-ingestion-indexing.git
+   cd document-ingestion-indexing
