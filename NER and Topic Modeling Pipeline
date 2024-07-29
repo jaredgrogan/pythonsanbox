@@ -1,0 +1,34 @@
+# NER and Topic Modeling Pipeline
+
+## Overview
+
+This Python script integrates Named Entity Recognition (NER) with spaCy and BERT-based models, and topic modeling using Latent Dirichlet Allocation (LDA). It also includes OCR (Optical Character Recognition) and multilingual text translation capabilities. 
+
+## Features
+
+- **Named Entity Recognition (NER)**:
+  - spaCy model
+  - BERT-based model
+  
+- **Topic Modeling**:
+  - Latent Dirichlet Allocation (LDA)
+  
+- **OCR**:
+  - Extract text from images using Tesseract OCR
+  
+- **Multilingual Support**:
+  - Translate text to different languages using Google Translate API
+
+## Requirements
+
+To run this script, you need to install the following Python libraries:
+
+- `spacy`
+- `transformers`
+- `gensim`
+- `googletrans`
+- `pytesseract`
+- `opencv-python`
+- `scikit-learn`
+
+You can install these libraries using pip:
