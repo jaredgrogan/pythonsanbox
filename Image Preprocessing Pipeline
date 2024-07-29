@@ -1,0 +1,22 @@
+# Image Preprocessing Pipeline
+
+This repository contains a Python implementation of an image preprocessing pipeline designed to improve image quality for further processing, such as Optical Character Recognition (OCR). The pipeline includes image normalization, noise reduction, and text alignment.
+
+## Features
+
+- **Image Normalization**: Converts images to grayscale and adjusts pixel values.
+- **Noise Reduction**: Removes noise using Gaussian blur.
+- **Text Alignment**: Corrects skew or distortion in the image.
+
+## Required Libraries
+
+To run this preprocessing pipeline, you'll need to install the following libraries:
+
+- **OpenCV** (`opencv-python`): For image reading, grayscale conversion, thresholding, and noise reduction.
+- **NumPy** (`numpy`): For array manipulation and mathematical operations.
+- **Scikit-Image** (`scikit-image`): For image processing tasks such as skew correction.
+
+You can install all required libraries using the following command:
+
+```bash
+pip install opencv-python numpy scikit-image
