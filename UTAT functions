@@ -1,0 +1,46 @@
+List of All Functions
+preprocess_image(image_path)
+ocr_image(image_path, use_google_vision=False)
+ocr_pdf(pdf_path, use_google_vision=False)
+extract_text_from_docx(docx_path)
+extract_text_from_doc(doc_path)
+extract_text_from_html(html_content)
+extract_text_from_csv(csv_path)
+extract_text_from_excel(excel_path)
+extract_text_from_json(json_path)
+extract_text(file_path, lang='en', use_google_vision=False)
+detect_language(text)
+translate_text(text, target_language='en')
+load_spacy_model(model_name='en_core_web_sm')
+extract_entities_spacy(text, model)
+load_bert_model(model_name='dbmdz/bert-large-cased-finetuned-conll03-english')
+extract_entities_bert(text, tokenizer, model)
+create_lda_model(texts, num_topics=5)
+print_topics(lda_model)
+preprocess_text(text)
+integrate_ner_and_topic_modeling(text, spacy_model_name='en_core_web_sm', num_topics=5)
+generate_rag_response(query, entities_spacy, entities_bert, topics, ocr_text=None, languages_supported=[])
+integrated_text_extraction(file_path, lang='en', use_google_vision=False)
+List of All Libraries Included
+os
+json
+logging
+subprocess
+BeautifulSoup (from bs4)
+pandas (as pd)
+pytesseract
+PIL (from PIL)
+cv2 (OpenCV)
+numpy (as np)
+selenium (for web scraping)
+langdetect
+google.cloud.vision (for Google Vision API)
+pdfminer (for PDF text extraction)
+textblob
+spacy
+transformers (for BERT models)
+gensim (for LDA modeling)
+googletrans (for translation)
+sklearn (for CountVectorizer)
+nltk
+bertopic
