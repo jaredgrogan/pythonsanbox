@@ -1,0 +1,18 @@
+# HybridRAG
+
+HybridRAG is a Retrieval-Augmented Generation (RAG) module designed to enhance document retrieval using a combination of dense and sparse search techniques. It utilizes FAISS for fast approximate nearest neighbor search, Annoy for efficient indexing, and TF-IDF for sparse vectorization to optimize query accuracy and speed.
+
+## Features
+
+- **Dense Vector Search**: Uses FAISS for high-dimensional vector search.
+- **Efficient Indexing**: Employs Annoy for scalable nearest neighbor indexing.
+- **Sparse Vectorization**: Utilizes TF-IDF for document representation.
+- **Hybrid Search**: Combines dense and sparse search results for improved accuracy.
+- **Re-ranking**: Enhances search results by re-ranking based on similarity.
+
+## Installation
+
+To install the required libraries, use the following pip commands:
+
+```bash
+pip install faiss-cpu annoy numpy scikit-learn scipy
