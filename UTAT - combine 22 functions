@@ -1,0 +1,37 @@
+Unified Text Extraction and Analysis Toolkit (UTAT)
+
+Description:
+UTAT is a versatile tool for extracting and analyzing text from various file formats. It supports OCR for image and PDF files, handles DOCX, DOC, HTML, CSV, Excel, and JSON formats. The toolkit performs language detection, translation, named entity recognition with spaCy and BERT, and topic modeling with LDA and BERTopic.
+
+Functions:
+
+Text Extraction:
+
+extract_text_from_docx(docx_path)
+extract_text_from_doc(doc_path)
+extract_text_from_html(html_content)
+extract_text_from_csv(csv_path)
+extract_text_from_excel(excel_path)
+extract_text_from_json(json_path)
+ocr_image(image_path, use_google_vision=False)
+ocr_pdf(pdf_path, use_google_vision=False)
+Language Handling:
+
+detect_language(text)
+translate_text(text, target_language='en')
+NER and Topic Modeling:
+
+load_spacy_model(model_name='en_core_web_sm')
+extract_entities_spacy(text, model)
+load_bert_model(model_name='dbmdz/bert-large-cased-finetuned-conll03-english')
+extract_entities_bert(text, tokenizer, model)
+create_lda_model(texts, num_topics=5)
+print_topics(lda_model)
+Integration:
+
+integrate_ner_and_topic_modeling(text, spacy_model_name='en_core_web_sm', num_topics=5)
+generate_rag_response(query, entities_spacy, entities_bert, topics, ocr_text=None, languages_supported=[])
+integrated_text_extraction(file_path, lang='en', use_google_vision=False)
+Libraries:
+
+os, json, logging, subprocess, BeautifulSoup, pandas, pytesseract, PIL, cv2, numpy, selenium, langdetect, google.cloud.vision, pdfminer, textblob, spacy, transformers, gensim, googletrans, sklearn, nltk, bertopic
